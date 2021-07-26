@@ -67,7 +67,7 @@ auth.onAuthStateChanged(user => {
         const items = querySnapshot.docs.map(doc => {
           return `<li>${doc.data().name}</li>`
         })
-
+        //add li to ui
         thingsList.innerHTML = items.join("")
       })
   } else {
